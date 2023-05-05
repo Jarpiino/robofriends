@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const CardList = ({ robots }) => {
   return (
-    <div>
+    <div className="grid gap-5 p-5 sm:grid-cols-1 md:grid-cols-3  lg:grid-cols-5">
       {robots.map((user, i) => {
         return (
           <Card
