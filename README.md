@@ -6,6 +6,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run deploy -- -m "commit message"`
+
+Under the hood, the predeploy script will build a distributable version of the React app and store it in a folder named build. Then, the deploy script will push the contents of that folder to a new commit on the gh-pages branch of the GitHub repository, creating that branch if it doesn't already exist.
+
+By default, the new commit on the gh-pages branch will have a commit message of "Updates". You can specify a custom commit message via the -m option, like this:
+
+### `$ git add .`
+
+### `$ git commit -m "Configure React app for deployment to GitHub Pages"`
+
+### `$ git push origin master`
+
+To push changes to the main branch
+
 ### `npm start`
 
 Runs the app in the development mode.\
